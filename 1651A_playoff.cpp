@@ -1,11 +1,6 @@
-/******************************************************************************
+// Before
+//taking real pairs from user
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <iostream>
 #include <queue>
 using namespace std;
@@ -87,3 +82,26 @@ int main()
       }
   }
 }
+
+//after what is really required
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    
+    int cases;
+    cin >> cases;
+    int stages;
+    for(int i = 0; i<cases; i++){
+        cin >> stages;
+        float res = pow(2,stages) - 1;
+        int fin = (int)res;
+        if(fin % 2 == 0)
+        cout << fin - 1<< endl;
+        else 
+        cout << fin << endl;
+    }
+}
+
